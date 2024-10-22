@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Sitesi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="box"></div>
+      <div class="navbar">
+        <div class="navbar-top">
+          <div class="navbar-content">
+            <div class="menu-list">
+              <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Filmler</a></li>
+                <li><a href="#">Diziler</a></li>
+                <li><a href="#">Listem</a></li>
+                <li><a href="#">Popüler</a></li>
+              </ul>
+            </div>
+
+            <div class="account">
+              <div class="photo">
+                <img src="./imgs/pp.jpg" width="50px" alt="sevde" />
+              </div>
+
+              <div class="hesap">
+                <a href="#"
+                  >Hesabım <i class="down fa-solid fa-sort-down"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="toggle">
+              <ul>
+                <i class="fa-solid fa-moon"></i>
+
+                <i class="fa-regular fa-sun"></i>
+                <div class="toggle-ball"></div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ana-sayfa">
+        <div id="film-logo">
+          <img src="./imgs/Dont-Look-Up-icon.png" width="150px" alt="icon" />
+        </div>
+
+        <h1>Don't Look Up</h1>
+
+        <span class="anasayfa-first"
+          >İki astronom, Dünya'yı yok edecek bir kuyruklu yıldızın yaklaşmakta
+          olduğu konusunda insanlığı uyarmak için bir medya turuna çıkar, ancak
+          hiç kimse onları umursamaz.</span
+        >
+
+        <span class="anasayfa-second"
+          ><b>Başroldekiler:</b> Leonardo DiCaprio, Jennifer Lawrence, Meryl
+          Streep.</span
+        >
+
+        <div class="anasayfa-btn">
+          <button class="btn"><a href="#">Oynat</a></button>
+          <button class="btn"><a href="#">Daha Fazla Bilgi</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-side">
+      <ul>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-solid fa-user-group"></i></a>
+        <a href="#"><i class="fa-solid fa-bookmark"></i></a>
+        <a href="#"><i class="fa-solid fa-hourglass-half"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="#"><i class="fa-solid fa-gear"></i></a>
+      </ul>
+    </div>
+
+    <div class="seperation"></div>
+
+    <div class="container">
+      <div class="movie-list-filter">
+        <select id="filmTuru" onchange="showOptions()">
+          <option value="" disabled selected>Film Türleri</option>
+          <option>Komedi</option>
+          <option>Aksiyon</option>
+          <option>Animasyon</option>
+          <option>Bilim Kurgu</option>
+          <option>Korku</option>
+          <option>Gerilim</option>
+          <option>Romantik Komedi</option>
+          <option>Belgesel</option>
+        </select>
+      </div>
+
+      <div class="movie-list-container">
+        <h1 class="movie-list-title">Popüler</h1>
+
+        <div class="movie-list-wrapper">
+          <ul class="movie-list">
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-themother.jpg"
+                  alt=""
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Mother</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgS/populer-extraction2.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Extraction II</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgS/populer-heart-of-stone.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Heart of Stone</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-bird-box-barcelona.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Bird Box Barcelona</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-the-out-laws.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Out-Laws</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-you-are-so-not-invited-to-my-bat-mitzvah.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title"
+                    >You Are So Not Invited to My Bat Mitzvah</span
+                  >
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/populer-nimona.jfif" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Nimona</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-pain-hustlers.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Pain Hustlers</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-the-monkey-king.webp"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Monkey King</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-the-perfect-find.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Perfect Find</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-the-archies.webp"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Archies</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/populer-Reptile.jfif" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Reptile</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-murder-mystery2.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Murder Mystery II</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+          </ul>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <h1 class="movie-list-title">En Çok İzlenenler</h1>
+
+        <div class="movie-list-wrapper">
+          <ul class="movie-list">
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/avatar.webp" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Avatar</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/titanic.jpg" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Titanic</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/star-wars-fhe-force-awakens.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title"
+                    >Star Wars: The Force Awakens</span
+                  >
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/avengers-endgame.jpg" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Avengers: Endgame</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/jurassic-world.webp" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Jurassic World</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/the-lion-king.jfif" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Lion King</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/hizli-ve-ofkeli-7.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Furious 7</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/frozen2.jpg" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Frozen II</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/avengersinfinitywar.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Avengers: Infinity War</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/spider-man-no-way-home.avif"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Spider-Man: No Way Home</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+          </ul>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <h1 class="movie-list-title">Yeni Çıkanlar</h1>
+
+        <div class="movie-list-wrapper">
+          <ul class="movie-list">
+            <a href="#">
+              <li class="movie-item">
+                <img class="movie-item-img" src="./imgs/a-time-called-u.jpg" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">A Time Called You</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-the-archies.webp"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Archies</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-the-perfect-find.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Perfect Find</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/they-cloned-tyrone.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">They Cloned Tyrone</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/a-tourist's-guide-to-love.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title"
+                    >A Tourist's Guide to Love</span
+                  >
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-pain-hustlers.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Pain Hustlers</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-you-are-so-not-invited-to-my-bat-mitzvah.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title"
+                    >You Are So Not Invited to My Bat Mitzvah</span
+                  >
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-heart-of-stone.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Heart of Stone</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populer-the-monkey-king.webp"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Monkey King</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+
+            <a href="#">
+              <li class="movie-item">
+                <img
+                  class="movie-item-img"
+                  src="./imgs/populerr-themother.jpg"
+                />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Mother</span>
+                  <div class="movie-item-buttons">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <i class="fa-solid fa-circle-plus"></i>
+                  </div>
+                </div></li
+            ></a>
+          </ul>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
