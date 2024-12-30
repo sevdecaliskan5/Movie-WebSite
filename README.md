@@ -22,10 +22,6 @@ This project is a stylish movie site where users can view movie lists, like movi
 
 **Interactive Buttons:** Each movie has buttons that allow users to play, like, dislike, or add the movie to their watchlist.
 
-# Live Demo / Preview
-
-To get a better understanding of how the website works, check out the screen recording below. It showcases the responsive design, smooth animations, and interactive features of the page in action. Watch the demo to see the project's features in real-time!
-
 ![FilmSitesi-GoogleChrome2024-10-1818-18-54-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8790a083-58bb-4dbd-9744-d49721f6a368)
 
 
